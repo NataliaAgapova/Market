@@ -1,0 +1,17 @@
+AddType application/x-httpd-php .inc
+DirectoryIndex index.php
+
+ErrorDocument 404 /error.php
+ErrorDocument 500 /error.php
+ErrorDocument 403 /error.php
+
+RewriteEngine On
+RewriteBase /
+AddDefaultCharset UTF-8
+Options -Indexes
+
+#человекополезные каталоги
+RewriteRule ^gallery/([0-9]+)\.html$ gallery.php?id=$1
+
+#Убираем расширение файла из URL
+RewriteRule ^(.*).html$ $1.php [L]

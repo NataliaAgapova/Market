@@ -1,0 +1,20 @@
+AddType application/x-httpd-php .inc
+DirectoryIndex organizer.php
+
+ErrorDocument 404 /error.php
+ErrorDocument 500 /error.php
+ErrorDocument 403 /error.php
+
+RewriteEngine On
+RewriteBase /organizer/
+AddDefaultCharset UTF-8
+Options -Indexes
+
+#человекополезные каталоги
+RewriteRule ^article/([0-9]+)\.html$ article_edit.php?id=$1
+
+#Убираем расширение файла из URL
+RewriteRule ^(.*).html$ $1.php [L]
+
+
+
