@@ -1,6 +1,6 @@
 <h1>Список <?= $nameitem[1]?></h1>
 
-<a href='organizer.html'>Вернуться</a>
+<a href='organizer.html' class='button'>Вернуться</a>
 <table class='tablesorter'>
 	<thead>
 		<tr>
@@ -14,7 +14,7 @@
 		<? foreach ($arts as $item) { ?>
 		<tr>
 			<? foreach ($show_art_fields as $type) {?>
-				<td>
+				<td  class='<?= $type ?>'>
 					<? switch ($type) {
 						case 'spec': ?>
 						<?= ($item[$type]=='on' ? 'да' :'нет') ?>
@@ -22,10 +22,14 @@
 						case 'part': ?>
 						<?=  $GLOBALS['part_name'][$item[$type]]?>
 						<? break;
-						case 'img_url': ?>
+						case 'img_url':
+						case 'prev_url': ?>
 						<? if ($item[$type]!='') {?>
 							<img src='../upload/<?= $item[$type] ?>' class='mini' />
 						<? } ?>
+						<? break;
+						case 'desc': ?>
+						<?= stripcslashes(unshield_text($item[$type]))  ?>
 						<? break;
 						default: ?>
 						<?= stripcslashes($item[$type])  ?>

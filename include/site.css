@@ -38,9 +38,11 @@ table.tablesorter thead tr .header {
 
 table.tablesorter thead tr .headerSortUp {
 	background-image: url(/images/asc.gif);
+	background-color: #fbfbda;
 }
 table.tablesorter thead tr .headerSortDown {
 	background-image: url(/images/desc.gif);
+	background-color: #fbfbda;
 }
 
 img.mini {
@@ -49,4 +51,53 @@ img.mini {
 
 .warning {
 	color: #FF0000;
+}
+
+body.adminka{
+	background-color: #fefefa;
+	color: #0e2817;
+}
+
+.adminka .wrapper {
+	margin: 20px;
+}
+
+.adminka h1 {
+	color: #228b22;
+}
+
+.adminka .button {
+	background-color: #568203;
+	color: #f0e68c;
+	margin: 0 5px;
+	padding: 14px;
+	border: 2px solid #517212;
+	border-radius: 10px;
+	text-decoration: none;
+}
+
+.adminka a{
+	color: #196819;
+}
+
+.adminka .img_url,  .adminka .prev_url{
+	text-align: center;
+}
+
+.adminka td {
+	padding: 5px;
+}
+
+.adminka .col-25 {
+	float: left;
+	width: 25%;
+}
+
+.adminka .col-50 {
+	float: left;
+	width: 50%;
+}
+
+.adminka .row {
+	clear: both;
 }

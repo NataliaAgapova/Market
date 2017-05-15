@@ -1,9 +1,9 @@
 <?php
 
-function insert_article($name, $desc, $img_url, $price=0, $part=1, $spec=0, $number=1, $status=
+function insert_article($name, $desc, $img_url, $prev_url='', $price=0, $part=1, $spec=0, $number=1, $status=
 	1) {
 	$curtime = date('Y-m-d H:i:s', time());
-	mysql_query("insert into article (id, name, `desc`, price, part, spec, img_url, number, status, dataadd) values(NULL,'$name','$desc','$price','$part','$spec','$img_url','$number', '$status', '$curtime')");
+	mysql_query("insert into article (id, name, `desc`, price, part, spec, img_url, prev_url, number, status, dataadd) values(NULL,'$name','$desc','$price','$part','$spec','$img_url', '$prev_url','$number', '$status', '$curtime')");
 	$msg = mysql_query("select * from article where id=(select max(id) from article)");
 	$msgfetch = mysql_fetch_array($msg);
 	return $msgfetch['id'];

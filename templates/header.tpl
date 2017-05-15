@@ -6,7 +6,7 @@
 
 	<link rel="stylesheet" type="text/css" href="include/site.css" media="screen, projection"/>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script type="text/javascript" src="include/site.js"></script>
+	<script type="text/javascript" src="js/site.js"></script>
 
 
 	</head>
