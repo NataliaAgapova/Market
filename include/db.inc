@@ -18,7 +18,7 @@ function get_articles($status=1) {
 	return $tmp;
 }
 
-function get_articles_from_part($part) {
+function get_articles_by_part($part) {
 	$msg=mysql_query("select * from article where status='1' and part='$part' order by name");
 	$tmp = array();
 	for ($i = 0; $i<mysql_num_rows($msg); $i++) {

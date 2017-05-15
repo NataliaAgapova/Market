@@ -10,6 +10,7 @@ mysql_query("CREATE TABLE IF NOT EXISTS `article` (
   `price` int(11) NOT NULL,
   `part` int(11) NOT NULL,
   `img_url` varchar(64) NOT NULL,
+  `prev_url` varchar(64) NOT NULL,
   `spec` enum('0','on') NOT NULL,
   `number` int(11) NOT NULL,
   `status` int(11) NOT NULL,

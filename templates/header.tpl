@@ -11,3 +11,8 @@
 
 	</head>
 	<body <?= (isset($onload)? 'onload="'.$onload.'"': '') ?>>
+		<ul>
+			<? foreach ($part_name as $key => $value) { ?>
+				<li><a href='/gallery/<?= $value ?>.html'><?= $value ?></a></li>
+			<? } ?>
+		</ul>

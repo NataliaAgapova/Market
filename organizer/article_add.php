@@ -1,7 +1,5 @@
 <?php
 include_once('../include/hgdb.inc');
-error_reporting(0);
-ini_set('display_errors','Off');
 
 if ($_POST==array()) {$error[] = 'oopsresizeimg_url'; $error[] = 'oopsresizeprev_url'; SetCookies($item, $error);  Header('Location: article_edit.html'); exit;}
 
