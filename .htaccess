@@ -12,9 +12,9 @@ Options -Indexes
 
 
 #человекополезные каталоги
-RewriteRule ^gallery/(illustration)\.html$ part.php?part=1 [L]
-RewriteRule ^gallery/(lettering)\.html$ part.php?part=2 [L]
-RewriteRule ^gallery/(improvisation)\.html$ part.php?part=3 [L]
+RewriteRule ^gallery/(illustration)\.html$ part.php?part=3 [L]
+RewriteRule ^gallery/(character)\.html$ part.php?part=2 [L]
+RewriteRule ^gallery/(improvisation)\.html$ part.php?part=1 [L]
 RewriteRule ^gallery/([a-zA-Z]+)/([0-9]+)\.html$ gallery.php?part=$1&id=$2 [L]
 
 #Убираем расширение файла из URL

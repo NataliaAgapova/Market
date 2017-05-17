@@ -1,7 +1,7 @@
 <?
 include_once('../include/hgdb.inc');
 
-mysql_query("CREATE DATABASE market;");
+mysql_query("CREATE DATABASE h112437_market;");
 
 mysql_query("CREATE TABLE IF NOT EXISTS `article` (
   `id` int(11) NOT NULL AUTO_INCREMENT,

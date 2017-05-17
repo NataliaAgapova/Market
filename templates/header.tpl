@@ -1,18 +1,52 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<!DOCTYPE html>
 <html>
-	<head>
- 	<meta name="description" content="<?= $desc ?>">
-	<title><?= $title ?></title>
-
-	<link rel="stylesheet" type="text/css" href="include/site.css" media="screen, projection"/>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/site.js"></script>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/include/main.css">
+    <script type="javascript">
 
 
-	</head>
-	<body <?= (isset($onload)? 'onload="'.$onload.'"': '') ?>>
-		<ul>
-			<? foreach ($part_name as $key => $value) { ?>
-				<li><a href='/gallery/<?= $value ?>.html'><?= $value ?></a></li>
-			<? } ?>
-		</ul>
+        $(document).ready(function() {
+            $(document).click(function(){
+                $('#suggestions').fadeOut(100);
+            });
+        });
+
+
+    </script>
+
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+
+    <title><?= $title ?></title>
+</head>
+<body>
+
+
+<div class="header">
+
+    <div class="portrait"><a href="index.html"><img src="/images/logomaha.png"></a></div>
+    <div class="mariart"><a href=""><img src="/images/mariart.png"></a> </div>
+    <div class="artpro"><a href=""><img src="/images/artpro.png"></a></div>
+
+</div>
+
+<div class="text">
+
+    <div><h1>MARIA SAAKYAN</h1></div>
+     <div><h1>THE INTERNAL REALISM</h1></div>
+    <div><h1>МАРИЯ СААКЯН</h1></div>
+    <div><h1>ВНУТРЕННИЙ РЕАЛИЗМ</h1></div>
+</div>
+
+
+<div class="side_menu">
+	<ul>
+		<? foreach ($part_name as $key => $value) { ?>
+			<li><a href='/gallery/<?= $value ?>.html'><?= $value ?></a></li>
+		<? } ?>
+        <li><a href="">ABOUT</a></li>
+        <li><a href="">PRINTSHOP</a></li>
+    </ul>
+
+</div>
