@@ -270,19 +270,31 @@ h1 {
     width: 27%;
     height: auto;
 
- /*   border: 1px solid yellowgreen; */
+  /* border: 1px solid yellowgreen; */
 
 
 }
 
-.quote blockquote {
-
-    font-family: JReg;
-    font-size: 17px;
-    margin-top: 0;
 
 
+
+
+.quote_style {
+    
+    font-family:JReg;
+    font-size:17px;
+    margin-top:0;
+    padding-top:0;
+    padding-right:40px;
+    padding-left:40px;
+    padding-bottom:0;
+   /* text-align:justify; */
+    text-align:left;
+    text-align:-moz-left;
+    line-height:1.6em; /*заплатка под мозиллу и ie, строки сливаются*/
+    
 }
+
 
 .space {
 

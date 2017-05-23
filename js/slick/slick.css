@@ -89,7 +89,7 @@
 .slick-slide img
 {
     display: block;
-    margin:auto;
+    margin:0 auto; /*заплатка для файрфокса, не менять*/
 }
 .slick-slide.slick-loading img
 {
