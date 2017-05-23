@@ -34,6 +34,9 @@
 			<? break;
 			case 'part': ?>
 			<select name='<?= $type ?>'>
+				<? if (!in_array('part',$req_art_fields)) {?>
+					<option value='0' <?= ($key == $item[$type] ? 'selected' : '') ?>>без раздела</option>
+				<? } ?>
 				<? foreach ($GLOBALS['part_name'] as $key => $title) { ?>
 					<option value='<?= $key ?>' <?= ($key == $item[$type] ? 'selected' : '') ?>><?= $title ?></option>
 				<? } ?>
