@@ -39,6 +39,13 @@ function resize($file) {
 		imagedestroy($dest);
 	}
 
+	if (file_exists($GLOBALS['uploaddir'] . $file['name'])) {
+		$file['name'] = rand().$file['name'];
+		if (file_exists($GLOBALS['uploaddir']. $file['name'])) {
+			$file['name'] = rand().$file['name'];
+		}
+	}
+
 	switch ($file['type']) {
 		case 'image/jpeg': $flag = imagejpeg($source, $GLOBALS['uploaddir'] . $file['name'], 75);
 			break;
@@ -48,6 +55,7 @@ function resize($file) {
 			break;
 		default: $flag = imagejpeg($source, $GLOBALS['uploaddir'] . $file['name'], 75);
 	}
+
 	imagedestroy($source);
 	return ($flag ? $file['name'] : false);
 

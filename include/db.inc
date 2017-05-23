@@ -9,8 +9,8 @@ function insert_article($name, $desc, $img_url, $prev_url='', $price=0, $part=1,
 	return $msgfetch['id'];
 }
 
-function get_articles($status=1) {
-	$msg=mysql_query("select * from article where status='$status' order by name");
+function get_articles($status=1, $order='dataadd') {
+	$msg=mysql_query("select * from article where status='$status' order by $order=0, $order ");
 	$tmp = array();
 	for ($i = 0; $i<mysql_num_rows($msg); $i++) {
 		$tmp[]= mysql_fetch_array($msg);
@@ -18,8 +18,8 @@ function get_articles($status=1) {
 	return $tmp;
 }
 
-function get_articles_by_part($part) {
-	$msg=mysql_query("select * from article where status='1' and part='$part' order by name");
+function get_articles_by_part($part, $order='dataadd') {
+	$msg=mysql_query("select * from article where status='1' and part='$part' order by $order");
 	$tmp = array();
 	for ($i = 0; $i<mysql_num_rows($msg); $i++) {
 		$tmp[]= mysql_fetch_array($msg);

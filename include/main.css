@@ -1,11 +1,4 @@
 @font-face {
-    src: url(/fonts/blowbrush.ttf);
-    font-family: BlowBrush;
-
-}
-
-
-@font-face {
 
     src: url(/fonts/4204.otf);
     font-family: JReg;
@@ -19,7 +12,7 @@ body {
 
 
 
-@media screen and (min-width: 480px) /*мобильный*/ {
+@media screen and (min-width: 480px) /*РјРѕР±РёР»СЊРЅС‹Р№*/ {
 
     .header {
 
@@ -30,16 +23,24 @@ body {
 
 }
 
-@media screen and (min-width: 768px) /*планшет в режиме portrait*/{
+
+.header img {
+
+    width: 100%;
+height: 100%;
+
+}
+
+@media screen and (min-width: 768px) /*РїР»Р°РЅС€РµС‚ РІ СЂРµР¶РёРјРµ portrait*/{
 
 
 }
 
-@media screen and (min-width: 992px) /*нетбуки, ноутбуки*/ {
+@media screen and (min-width: 992px) /*РЅРµС‚Р±СѓРєРё, РЅРѕСѓС‚Р±СѓРєРё*/ {
 
 }
 
-@media screen and (min-width: 1382px)/*большие мониторы*/{
+@media screen and (min-width: 1382px)/*Р±РѕР»СЊС€РёРµ РјРѕРЅРёС‚РѕСЂС‹*/{
 
 
     .side_menu {
@@ -137,12 +138,12 @@ h1 {
 
 .wrapper {
 
-    width: 90%;
+    width: 100%;
     margin: auto;
     display: flex;
     flex-direction: row;
     margin-top: 1%;
-/*    border: 1px solid aqua; */
+    border: 1px solid aqua;
 
 
 }
@@ -153,13 +154,12 @@ h1 {
     width: 900px;
     height: 900px;
     margin: auto;
-  /*  border: 1px solid red; */
+/*    border: 1px solid red; */
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
 
-    background-color: darkgrey;
 
 }
 
@@ -167,8 +167,8 @@ h1 {
 .row_1 {
 
     display: inline-flex;
-    vertical-align: top; /*убирает отступы у блоков*/
-    letter-spacing: 0em; /*убирает пробелы между блоками*/
+    vertical-align: top; /*СѓР±РёСЂР°РµС‚ РѕС‚СЃС‚СѓРїС‹ Сѓ Р±Р»РѕРєРѕРІ*/
+    letter-spacing: 0em; /*СѓР±РёСЂР°РµС‚ РїСЂРѕР±РµР»С‹ РјРµР¶РґСѓ Р±Р»РѕРєР°РјРё*/
     word-spacing: 0em;
 
 }
@@ -191,6 +191,21 @@ h1 {
 }
 
 
+.item_2 {
+    
+    width:180px;
+    height:180px;
+    
+}
+
+
+.item_2 img {
+    
+    width:100%;
+    height:100%;
+    
+}
+
 
 
 .side_menu {
@@ -199,6 +214,7 @@ h1 {
 
     margin: auto;
     width: 72%;
+    margin-top:3%;
  /*   display: flex;
     flex-direction: row; */
  /*  border: 1px solid red; */
@@ -233,33 +249,18 @@ h1 {
 }
 
 
-.space {
 
-    height: 5%;
-
-}
-
-
-#suggestions /*блок для вызова нужен?????*/ {
-
-    width: 400px;
-    height: 400px;
-    z-index: 999;
-    background-color: gray;
-
-
-}
-
-
-/*стили страницы ill*/
+/*СЃС‚РёР»Рё СЃС‚СЂР°РЅРёС†С‹ ill*/
 
 
 .wrapper_two {
 
-    width: 83%;
+     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+ /*   border: 1px solid aqua; */
 
 }
 
@@ -268,6 +269,8 @@ h1 {
 
     width: 27%;
     height: auto;
+
+ /*   border: 1px solid yellowgreen; */
 
 
 }
@@ -281,5 +284,181 @@ h1 {
 
 }
 
+.space {
 
+    margin-top: 4%;
+
+}
+
+
+/*РјРѕРґР°Р»СЊРЅРѕРµ РѕРєРЅРѕ*/
+
+.modal_dialog {
+    z-index: 999;
+    width: 1280px;
+    height: 1300px;
+    background-color: whitesmoke;
+    display: none;
+    position: absolute;
+    padding:0;
+    margin-left:40px;
+    
+}
+
+
+.modal_dialog:target {
+
+    display: block;
+    pointer-events: auto;
+
+}
+
+.close {
+
+    font-family: JReg;
+    text-decoration: none;
+    color: black;
+
+}
+
+
+.wrapper_three {
+
+width: 70%;
+margin: auto;
+margin-top: 2%;
+
+
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+
+}
+
+
+.photo_block {
+
+width: 30%;
+
+
+display: flex;
+flex-direction: column;
+
+margin-top: -1%;
+
+}
+
+.photo {
+
+margin: auto;
+margin-top: 3%;
+margin-bottom: 0;
+
+}
+
+.photo img {
+
+width: 220px;
+height: 320px;
+
+
+}
+
+.crown {
+
+margin: auto;
+margin-top: 2%;
+margin-bottom:0;
+
+
+}
+
+.crown img {
+
+width: 70px;
+height: 70px;
+
+}
+
+
+
+.about_text {
+
+width: 70%;
+
+
+
+}
+
+.about_text_style {
+
+font-family: JReg;
+font-size: 20px;
+margin: 0;
+padding: 0;
+
+text-align: justify;
+
+line-height: 1.3em;
+
+}
+
+.icons {
+
+display: inline-block;
+float: right;
+
+margin-top: -8%;
+
+}
+
+.icons img {
+
+
+width: 50px;
+height: 50px;
+
+margin-right: 2.5em;
+
+
+
+}
+
+.icons img:last-child {
+
+margin-right: 0;
+
+}
+
+
+.icons a {
+
+width: 50px;
+height: 50px;
+
+margin-right: 2.5em;
+
+
+}
+
+.icons a:last-child {
+
+margin-right: 0;
+
+}
+
+
+.mail_about {
+    
+    text-decoration:none;
+    color:black;
+    
+}
+
+.mail_about:hover {
+    
+    color:dimgrey;
+    
+    
+}
 
