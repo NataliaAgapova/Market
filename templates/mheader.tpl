@@ -3,9 +3,8 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" type="text/css" href="/css/main.css">
-    <link rel="stylesheet" type="text/css" href="/cssW/mobile.css">
+    <link rel="stylesheet" type="text/css" href="/css/mobile.css">
     <link rel="stylesheet" type="text/css" href="/js/slick/slick-theme.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 

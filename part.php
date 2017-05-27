@@ -7,11 +7,11 @@ $title = $part_name[$part];
 
 $articles = get_articles_by_part($part);
 
-include_once('templates/header.tpl');
+include_once('templates/'.$mobile.'header.tpl');
 
-include_once('templates/slider.tpl');
+include_once('templates/'.$mobile.'slider.tpl');
 
-include_once('templates/part.tpl');
+include_once('templates/'.$mobile.'part.tpl');
 /*
 switch ($part) {
 	case (1): include_once('templates/part.tpl');
@@ -22,8 +22,6 @@ switch ($part) {
 		break;
 }*/
 
-include_once('templates/part.tpl');
-
-include_once('templates/footer.tpl');
+include_once('templates/'.$mobile.'footer.tpl');
 
 ?>

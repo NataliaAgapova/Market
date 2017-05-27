@@ -3,7 +3,8 @@ $(document).ready(function() {
 $('.slider').slick({
 	dots: true,
 	fade: true,
-	pauseOnHover: false
+	pauseOnHover: false,
+	centerMode: true,
   });
 
 $(document).on("click", ".item img", function() {

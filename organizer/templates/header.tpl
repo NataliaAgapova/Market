@@ -3,7 +3,7 @@
 	<head>
 	<title>Администраторский интерфейс <?= $title ?></title>
 
-	<link rel="stylesheet" type="text/css" href="/include/site.css" media="screen, projection"/>
+	<link rel="stylesheet" type="text/css" href="/css/site.css" media="screen, projection"/>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script type="text/javascript" src="/js/admin.js"></script>
 	<script type="text/javascript" src="/js/jquery.tablesorter.min.js"></script>

@@ -3,7 +3,7 @@ include_once('include/hgdb.inc');
 
 $title = "printshop" ;
 
-include_once('templates/header.tpl');
+include_once('templates/'.$mobile.'header.tpl');
 ?>
 <div class="wrapper_three">
 <div class="about_text_style">
@@ -12,6 +12,6 @@ include_once('templates/header.tpl');
 </div>
 <?
 
-include_once('templates/footer.tpl');
+include_once('templates/'.$mobile.'footer.tpl');
 
 ?>
